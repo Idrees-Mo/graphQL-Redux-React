@@ -1,13 +1,17 @@
 import React from "react";
-// import { Counter } from "./features/counter/Counter";
+import styled from "styled-components";
 import "./App.css";
 
+const AppContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 function App() {
-  return (
-    <div className="App">
-      hello world!
-      {/* <Counter /> */}
-    </div>
-  );
+  return <AppContainer>Hello World!</AppContainer>;
 }
+
 export default App;
